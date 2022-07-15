@@ -1,0 +1,17 @@
+{
+  "name": "twitch-osu-chat-bot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodmeon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bancho.js": "^0.9.7",
+    "nodemon": "^2.0.19",
+    "tmi.js": "^1.8.5"
+  }
+}
