@@ -1,0 +1,65 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": ["airbnb-base"],
+    "plugins": ["prettier", "import"],
+    "globals": {
+        "JWT_SECRET": "readonly"
+    },
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["warn", 4],
+        "quotes": "off",
+        "arrow-body-style": "off",
+        "prettier/prettier": "warn",
+        "no-return-await": "warn",
+        "no-redeclare": "error",
+        "no-useless-return": "warn",
+        "require-await": "error",
+        "valid-jsdoc": "off",
+        "require-jsdoc": "off",
+        "semi-style": "error",
+        "no-await-in-loop": "off",
+        "no-console": "off",
+        "import/no-named-as-default-member": "off",
+        "no-nested-ternary": "warn",
+        "multiline-ternary": "off",
+        "vars-on-top": "off",
+        "camelcase": "off",
+        "spaced-comment": "error",
+        "space-before-function-paren": "error",
+        "func-style": "off",
+        "curly": "off",
+        "sort-imports": "off",
+        "semi-spacing": "error",
+        "no-use-before-define": "warn",
+        "prefer-promise-reject-errors": "error",
+        "comma-dangle": "off",
+        "prefer-destructuring": "off",
+        "no-tabs": "error",
+        "no-unexpected-multiline": "off",
+        "object-curly-newline": "off",
+        "import/no-named-as-default": "off",
+        "no-underscore-dangle": "off",
+        "import/prefer-default-export": "off",
+        "quotes": [1, "double"]
+    },
+    "settings": {
+        "import/extensions": [".js"]
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.js"],
+            "rules": {
+                "quotes": [1, "single"]
+            }
+        }
+    ]
+}
